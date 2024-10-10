@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Workshop Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Online Workshop Management</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#register">Register</a>
+            <a href="#admin">Admin</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Online Workshops!</h2>
+            <p>Enhance your skills through our interactive workshops designed for all levels.</p>
+
+            <div class="intro-cards">
+                <div class="intro-card">
+                    <h3>Interactive Learning</h3>
+                    <p>Join live sessions with expert instructors and engage with peers.</p>
+                </div>
+                <div class="intro-card">
+                    <h3>Diverse Topics</h3>
+                    <p>Explore a variety of subjects from tech to soft skills.</p>
+                </div>
+                <div class="intro-card">
+                    <h3>Flexible Scheduling</h3>
+                    <p>Attend workshops at times that fit your schedule.</p>
+                </div>
+            </div>
+
+            <h3>Featured Workshops</h3>
+            <div id="featured-workshops">
+                <!-- Featured workshops will be dynamically populated here -->
+            </div>
+
+        </section>
+
+        <section id="workshops">
+            <h2>Upcoming Workshops</h2>
+            <div id="workshop-list"></div>
+        </section>
+
+        <section id="register" style="display: none;">
+            <h2>Register for Workshop</h2>
+            <form id="registration-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="hidden" id="workshop-title">
+                <button type="submit">Register</button>
+            </form>
+            <div id="registration-message"></div>
+        </section>
+
+        <section id="admin" style="display: none;">
+            <h2>Admin Panel</h2>
+            <form id="workshop-form">
+                <input type="text" id="workshop-name" placeholder="Workshop Title" required>
+                <input type="date" id="workshop-date" required>
+                <input type="time" id="workshop-time" required>
+                <textarea id="materials" placeholder="Upload training materials or provide links..." required></textarea>
+                <button type="submit">Add Workshop</button>
+            </form>
+            <div id="admin-message"></div>
+        </section>
+
+        <section id="resources" style="display: none;">
+            <h2>Post Training Resources</h2>
+            <div id="resources-list"></div>
+            <button onclick="loadResources()">Load Resources</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Workshop Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

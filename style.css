@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Workshop and Resource List Styles */
+#workshop-list div,
+#resources-list div {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#workshop-list div:hover,
+#resources-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+    background-color: #28A745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #007BFF; 
+    color: white; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller header on mobile */
+    }
+
+    nav a {
+        margin-right: 10px; /* Adjust spacing for mobile */
+        font-size: smaller; /* Smaller font size for mobile */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 15px; /* More padding for touch targets */
+        font-size: larger; /* Larger text for readability */
+        border-radius: 8px; /* More rounded corners on buttons */
+    }
+}
